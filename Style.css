@@ -1,0 +1,30 @@
+body { background-color : #ccffcc;
+font-family : "Georgia" , serif;}
+
+a:link, a:visited {
+background-color : purple ;
+color : white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display : inline-block ; }
+
+a: hover, a: active {
+background-color : lightpurple ;
+color : white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display : inline-block ; }
+
+table { width : 100% ; }
+
+th { text-align : center 
+background-color : lightpurple ;}
+
+td { text-align : center ;
+verticle-align : center ;}
+
+th, td { border-bottom : 1px solid #ddd ; }
+
+
