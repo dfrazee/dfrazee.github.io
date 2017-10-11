@@ -4,14 +4,8 @@ font-family : "Georgia" , serif;}
 a {
     
     float:left;
+    float : center;
     margin: 0 0 10px 10px;
-}
-
-
-h2, h3, p, th, tb, img {
-    
-    float : right;
-    
 }
 
 
