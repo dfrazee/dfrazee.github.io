@@ -1,6 +1,31 @@
 body { background-color : #ccffcc;
 font-family : "Georgia" , serif;}
 
+.header, .footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    width: 25%;
+}
+
+.content {
+    width: 75%;
+}
+
 a { 
     float : left ;
     
@@ -15,18 +40,6 @@ h1 div.fixed {
     border: 3px solid #73AD21;
 }
 
-
-
-body div.fixed {
-    position: fixed ;
-    top : 0;
-    right : 0;
-    width: 300px;
-    border: 3px solid #73AD21;
-    margin-right : 300;
-  
-    
-}
 
 a:link, a:visited {
 background-color : purple ;
