@@ -4,7 +4,8 @@ font-family : "Georgia" , serif;}
 a:link {
     
     float:left ;
-    margin : 2 in;
+    margin-left : 2 in;
+    margin-bottom : 2in;
 }
 
 
