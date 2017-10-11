@@ -10,7 +10,7 @@ text-decoration: none;
 display : inline-block ; }
 
 a: hover, a: active {
-background-color : lightpurple ;
+background-color : #cc6699 ;
 color : white;
 padding: 14px 25px;
 text-align: center;
@@ -20,7 +20,7 @@ display : inline-block ; }
 table { width : 100% ; }
 
 th { text-align : center 
-background-color : lightpurple ;}
+background-color : #cc6699 ;}
 
 td { text-align : center ;
 verticle-align : center ;}
