@@ -1,6 +1,11 @@
 body { background-color : #ccffcc;
 font-family : "Georgia" , serif;}
 
+a { 
+    float : left ;
+    
+}
+
 
 h1 div.fixed {
     position: fixed;
@@ -12,13 +17,13 @@ h1 div.fixed {
 
 
 
-a:link div.fixed {
+body div.fixed {
     position: fixed ;
     top : 0;
-    left : 0;
+    right : 0;
     width: 300px;
     border: 3px solid #73AD21;
-    margin-left : 300;
+    margin-right : 300;
   
     
 }
