@@ -6,9 +6,19 @@ a {
     margin: 0 0 10px 10px;
 }
 
+h1 div.fixed {
+    position: fixed;
+   top : 0;
+    center: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+
 
 a div.fixed {
     position: fixed;
+    top : 2;
     left : 0;
     width: 300px;
     border: 3px solid #73AD21;
