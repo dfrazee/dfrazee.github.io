@@ -1,6 +1,10 @@
 body { background-color : #ccffcc;
 font-family : "Georgia" , serif;}
 
+#wrapper {width: 100%; margin: auto;}
+#left { width: 50%; float: left;}
+#right { width: 50%; float: right}
+
 a:link {
     
     float:left ;
