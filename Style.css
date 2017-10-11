@@ -3,15 +3,14 @@ font-family : "Georgia" , serif;}
 
 a {
     
-    float:left;
-    float : center;
+    float:left
     margin: 0 0 10px 10px;
 }
 
 
 h1 div.fixed {
     position: fixed;
-   top : 0;
+    top : 0;
     center: 0;
     width: 300px;
     border: 3px solid #73AD21;
