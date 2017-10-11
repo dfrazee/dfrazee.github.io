@@ -7,6 +7,12 @@ a {
     margin: 0 0 10px 10px;
 }
 
+<div class="leftColumnWithFloatLeft">
+</div>
+
+<div class = "rightcolumn">
+ Header, h1
+<\div>
 
 h1 div.fixed {
     position: fixed;
