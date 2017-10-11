@@ -1,7 +1,7 @@
 body { background-color : #ccffcc;
 font-family : "Georgia" , serif;}
 
-a {
+a:link {
     
     float:left ;
     margin : 2 in;
@@ -18,7 +18,7 @@ h1 div.fixed {
 
 
 
-a div.relative {
+a:link div.relative {
     position: relative;
     top : 0;
     left : 0;
