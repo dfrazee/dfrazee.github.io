@@ -1,5 +1,10 @@
 body { background-color : #ccffcc;
 font-family : "Georgia" , serif;}
+a {
+    float:left;
+    margin: 0 0 10px 10px;
+}
+
 
 a:link, a:visited {
 background-color : purple ;
