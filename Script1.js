@@ -1,7 +1,7 @@
 // JavaScript source code
 
 function validateForm() {
-
+  alert("test");
 //listing variables
 var a = document.forms["myForm"]["firstname"].value;
 var b = document.forms["myForm"]["lastname'].value;
