@@ -1,6 +1,13 @@
 <!doctype html>
 
 <html lang="en">
+	<script>
+		function time(){
+	var d = new Date()
+	document.getElementById("bobTime").innerText = d.toLocaleDateString();
+}
+setInterval(time,1000); 
+	</script>
 <head>
   <meta charset="utf-8">
 
@@ -42,6 +49,7 @@ src="essentials.jpg" alt="essentials logo"/>
  </table>
 
 		
-		</column>
+	</column></br>
+	<a id="bobTime"></a>
 	
 </html>
