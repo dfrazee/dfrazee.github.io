@@ -1,6 +1,13 @@
 
 
 <html lang="en">
+	<script>
+		function time(){
+	var d = new Date()
+	document.getElementById("bobTime").innerText = d.toLocaleDateString();
+}
+setInterval(time,1000); 
+	</script>
 <head>
   <meta charset="utf-8">
 
@@ -51,7 +58,7 @@
 
 </table>
 
-<a href="index.htm">Home</a>
-	<script src="Script1.js"></script>
+	<a href="index.htm">Home</a></br>
+<a id="bobTime"></a>
 </body>
 </html>
