@@ -1,6 +1,13 @@
 <html>
   
 	<link rel="stylesheet" href="Style.css" type="text/css">
+	<script>
+		function time(){
+	var d = new Date()
+	document.getElementById("bobTime").innerText = d.toLocaleDateString();
+}
+setInterval(time,1000); 
+	</script>
 <script>
 	function validateForm() {
   alert("test");
@@ -49,6 +56,6 @@ if (a == "") {
 	
 </form>
 <a href="index.htm">Home</a>
-	
+	<a id="bobTime"></a>
 </body>
 </html>
