@@ -2,6 +2,26 @@
 
 <html lang="en">
 	<script>
+		function myFunction() {
+			alert("test");
+    document.getElementById("myDropdown").classList.toggle("show");
+		}
+			
+			window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show'); 
+      }
+    }
+  }
+			}
+    
+		
 		function time(){
 	var d = new Date()
 	document.getElementById("bobTime").innerText = d.toLocaleDateString();
@@ -16,6 +36,17 @@ setInterval(time,1000);
   <meta name="description" content="HTML5 Template">
 	
 	<link rel="stylesheet" href="Style.css" type="text/css">
+	
+	<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.htm">Home</a>
+    <a href="Topical.html">Topical Oils</a>
+    <a href="dietary.html">Dietary Oils</a>
+    <a href="ContactUs.html">Contact</a>
+  </div>
+</div>
+	
 <body style="background-color:#ccffcc;" align="center">
 </head>
 
