@@ -3,7 +3,8 @@
 	<link rel="stylesheet" href="Style.css" type="text/css">
 	<script>
 		function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show"); }
+    document.getElementById("myDropdown").classList.toggle("show");
+		}
 			
 			window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
@@ -14,6 +15,10 @@
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show'); 
+      }
+    }
+  }
+			
 		
 function validateForm() {
     var a = document.forms["myForm"]["firstname"].value;
