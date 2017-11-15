@@ -26,7 +26,6 @@
 }
 setInterval(time,1000); 
 		
-		
 		var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -51,8 +50,9 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += "active";
+  dots[slideIndex-1].className += " active";
 }
+		
 	</script>
 <head>
   <meta charset="utf-8">
@@ -84,36 +84,23 @@ Our mission is to enrich and our customers lives. <br>
 Through the use of essentail oils, customers can expect a new sense of vigor and health. <br>
 Feel free to give us a call or email us with any questions.</p>
 
-	<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="EO Mankind.jpg" style="width:500px">
-    <div class="text"></div>
-  </div>
 	
 	<div class="slideshow-container">
   <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="copaiba.jpg" style="width:500px">
-    <div class="text">Copaiba</div>
+    <div class="numbertext">1 / 3</div>
+    <img src="EO Mankind.jpg" style="width:100%">
+    <div class="text">Essential Oils</div>
   </div>
 
-	<div class="slideshow-container">
   <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="digize.jpg" style="width:500px">
+    <div class="numbertext">2 / 3</div>
+    <img src="digize.jpg" style="width:100%">
     <div class="text">Digize</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="r.c..jpg" style="width:500px">
-    <div class="text">R.C.</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="peppermint.jpg" style="width:500px">
+    <div class="numbertext">3 / 3</div>
+    <img src="peppermint.jpg" style="width:100%">
     <div class="text">Peppermint</div>
   </div>
 
@@ -126,8 +113,6 @@ Feel free to give us a call or email us with any questions.</p>
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
 </div>
 	
 	
