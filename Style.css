@@ -125,8 +125,8 @@ th, td { border-bottom : 1px solid #ddd ; }
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
+  width: 500px;
+  margin-top: -30px;
   padding: 16px;
   color: white;
   font-weight: bold;
