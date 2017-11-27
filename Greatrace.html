@@ -4,6 +4,8 @@
 	<script>
 		var greenLight = "https://i.stack.imgur.com/KS1Ma.jpg";
 		var redLight = "https://i.imgur.com/UnwEcr6_d.jpg";
+		var onePos = 0;
+		var twoPos = 0;
 		function start()
 		{
 			document.getElementById("redgreen").src = greenLight;
@@ -11,9 +13,10 @@
 			alert('hayyy gurl123');
 		}
 		function race(){
-			alert('Im a popup');
-			document.getElementById("person1").Style.left = document.getElementById("person1").Style.left + 5;
-			document.getElementbyId("person2").Style.left = document.getElementById("person2").Style.left + 5;
+			onePos = onePos + 5;
+			twoPos = twoPos + 5;
+			document.getElementById("person1").Style.left = onePos+"px";
+			document.getElementbyId("person2").Style.left = twoPos+"px";
 		}
 	</script>
 	<style>
@@ -24,7 +27,7 @@
 			.personOne{
 				position:absolute;
 				top: 250px;
-				left: 0px;
+				left: 100px;
 				width: 50px;
 				height: 50px;
 		}
