@@ -6,10 +6,11 @@
 		var redLight = "https://i.imgur.com/UnwEcr6_d.jpg";
 		var onePos = 0;
 		var twoPos = 0;
+		var timers;
 		function start()
 		{
 			document.getElementById("redgreen").src = greenLight;
-			setInterval(race, 500);
+			timers = setInterval(race, 500);
 			alert('mrow');
 		}
 		function race(){	
@@ -18,7 +19,21 @@
 			document.getElementById("person1").style.left = onePos+"px";
 			document.getElementById("person2").style.left = twoPos+"px";
 			
+			if(onePos >= 200)
+			{
+				clearInterval(timers);
+				reset();
+			}
 		}
+		function reset()
+		{
+			onePos = 0;
+			twoPos = 0;
+			document.getElementById("person1").style.left = "0px";
+			document.getElementById("person2").style.right = "0px";
+			document.getElementById("redgreen").src = redLight;
+		}
+		
 	</script>
 	<style>
 		.stopLight{
