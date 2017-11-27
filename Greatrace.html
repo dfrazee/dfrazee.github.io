@@ -10,8 +10,7 @@
 		function start()
 		{
 			document.getElementById("redgreen").src = greenLight;
-			timers = setInterval(race, 500);
-			alert('mrow');
+			timers = setInterval(race, 500);		
 		}
 		function race(){	
 			onePos = onePos + Math.floor((Math.random()*10)+1);
@@ -21,6 +20,13 @@
 			
 			if(onePos >= 200)
 			{
+				alert('Number one wins!');
+				clearInterval(timers);
+				reset();
+			}
+			if(twoPos >= 200)
+			{
+				alert('Number two wins!');
 				clearInterval(timers);
 				reset();
 			}
@@ -30,7 +36,7 @@
 			onePos = 0;
 			twoPos = 0;
 			document.getElementById("person1").style.left = "0px";
-			document.getElementById("person2").style.right = "0px";
+			document.getElementById("person2").style.left = "0px";
 			document.getElementById("redgreen").src = redLight;
 		}
 		
