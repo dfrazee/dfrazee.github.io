@@ -13,8 +13,8 @@
 			alert('hayyy gurls');
 		}
 		function race(){	
-			onePos = onePos + 5;
-			twoPos = twoPos + 5;
+			onePos = onePos + Math.floor((Math.random()*10)+1);
+			twoPos = twoPos + Math.floor((Math.random()*10)+1);
 			document.getElementById("person1").style.left = onePos+"px";
 			document.getElementById("person2").style.left = twoPos+"px";
 			
