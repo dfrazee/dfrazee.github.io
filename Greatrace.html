@@ -7,9 +7,12 @@
 		function start()
 		{
 			document.getElementById("redgreen").src = greenLight;
-			
+			setInterval(race, 500);
 		}
-		
+		function race(){
+			document.getElementById("person1").Style.left = document.getElementById("person1").Style.left + 5px;
+			document.getElementbyId("person2").Style.left = document.getElementById("person2").Style.left + 5px;
+		}
 	</script>
 	<style>
 		.stopLight{
@@ -18,14 +21,14 @@
 		}
 			.personOne{
 				position:absolute;
-				top: 300px;
+				top: 250px;
 				left: 0px;
 				width: 50px;
 				height: 50px;
 		}
 		.personTwo{
 			position:absolute;
-			top: 350px;
+			top: 300px;
 			left: 0px;
 			width: 50px;
 			height: 50px;
