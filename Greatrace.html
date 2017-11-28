@@ -13,8 +13,8 @@
 			timers = setInterval(race, 500);		
 		}
 		function race(){	
-			onePos = onePos + Math.floor((Math.random()*10)+1);
-			twoPos = twoPos + Math.floor((Math.random()*10)+1);
+			onePos = onePos + Math.floor((Math.random()*50)+1);
+			twoPos = twoPos + Math.floor((Math.random()*50)+1);
 			document.getElementById("person1").style.left = onePos+"px";
 			document.getElementById("person2").style.left = twoPos+"px";
 			
@@ -46,7 +46,7 @@
 			display: block;
 			margin: 0 auto;
 			height: 150px;
-			width: 150px;
+			width: 200px;
 		}
 			.personOne{
 				position:absolute;
