@@ -22,16 +22,24 @@
 			
 			if(onePos >= 1000)
 			{
-				document.getElementById("person1").src = runningDog;
+				alert ('Dog Wins!' document.getElementById("person1").src = runningDog);
 				clearInterval(timers);
 				reset();
 			}
 			if(twoPos >= 1000)
 			{
-				document.getElementById("person2").src = runningMan;
+				alert ('Man Wins!' document.getElementById("person2").src = runningMan);
 				clearInterval(timers);
 				reset();
 			}
+		}
+		function reset()
+		{
+			onePos = 0;
+			twoPos = 0;
+			document.getElementById("person1").style.left = "0px";
+			document.getElementById("person2").style.left = "0px";
+			document.getElementById("redgreen").src = redLight;
 		}
 		function reset()
 		{
