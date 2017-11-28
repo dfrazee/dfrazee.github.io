@@ -4,6 +4,8 @@
 	<script>
 		var greenLight = "greenlight.jpg";
 		var redLight = "redlight.jpg";
+		var runningDog = "running dog.gif";
+		var runningMan = "running man.gif";
 		var onePos = 0;
 		var twoPos = 0;
 		var timers;
@@ -20,13 +22,13 @@
 			
 			if(onePos >= 1000)
 			{
-				alert ('Player 1 wins!');
+				document.getElementById("person1").src = runningDog;
 				clearInterval(timers);
 				reset();
 			}
 			if(twoPos >= 1000)
 			{
-				alert ('Player 2 wins!');
+				document.getElementById("person2").src = runningMan;
 				clearInterval(timers);
 				reset();
 			}
