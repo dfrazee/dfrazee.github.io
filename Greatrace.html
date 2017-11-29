@@ -44,6 +44,14 @@
 		
 	</script>
 	<style>
+		.finishLine{
+			position:absolute;
+			top: 250px;
+			left: 1000px;
+			width: 50px;
+			height: 300px;
+		}
+		
 		.stopLight{
 			display: block;
 			margin: 0 auto;
@@ -76,6 +84,9 @@
 </head>
 
 <body style="background-color:#ccffcc">
+	
+	<div>
+		<img class="finishLine" id="finishline" src="finish line.png" alt="finishline" />
 	
   <div>
     <img class="stopLight" id="redgreen" src="redlight.jpg" alt="stoplight" onClick="start()" />
