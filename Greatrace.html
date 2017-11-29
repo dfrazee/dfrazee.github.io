@@ -24,15 +24,15 @@
 			
 			if(onePos >= 1000)
 			{
-				alert ('Dog Wins!');
+				document.getElementById("overlayDog").style.display = "block";
 				clearInterval(timers);
-				reset();
+				
 			}
 			if(twoPos >= 1000)
 			{
-				alert ('Man Wins!');
+				document.getElementById("overlayMan").style.display = "block";
 				clearInterval(timers);
-				reset();
+				
 			}
 		}
 		function reset()
