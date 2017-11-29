@@ -6,6 +6,8 @@
 		var redLight = "redlight.jpg";
 		var runningDog = "running dog.gif";
 		var runningMan = "running man.gif";
+		var overlayDog = "dog.jpg";
+		var overlayMan = "man.jpg";
 		var onePos = 0;
 		var twoPos = 0;
 		var timers;
@@ -44,6 +46,33 @@
 		
 	</script>
 	<style>
+		
+		.overlayDog {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+		.overlayMan {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
 		.finishLine{
 			position:absolute;
 			top: 200px;
@@ -85,8 +114,15 @@
 
 <body style="background-color:#ccffcc">
 	
-	<div>
-		<img class="finishLine" id="finishline" src="finish line.png" alt="finishline" />
+<div>
+	<img class="overlayDog" id="overlaydog" src="dog.jpg" alt="overlaydog" onclick="reset()" />
+</div>	
+<div>
+	<img class="overlayMan" id="overlayman" src="man.jpg" alt="overlayman" onclick="reset()" />
+</div>
+	
+<div>
+	<img class="finishLine" id="finishline" src="finish line.png" alt="finishline" />
 	
   <div>
     <img class="stopLight" id="redgreen" src="redlight.jpg" alt="stoplight" onClick="start()" />
